@@ -14,6 +14,11 @@
 #include <ArduinoJson.h>
 #include "efontEnableJa.h"
 #include "efont.h"
+// M5StickCPlusの場合は
+// efontライブラリのefontM5StickC.hを複製し、
+// 内部の#include <M5StickC.h>を#include <M5StickCPlus.h>に
+// 修正が必要。
+//#include "efontM5StickC"
 #include "efontM5StickCPlus.h"
 
 WiFiMulti   wifiMulti;
